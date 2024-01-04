@@ -53,6 +53,10 @@ body {
     margin-bottom: 20%;
 }
 
+.index-button:hover {
+    background-color: #BF3C17; /* Change the background color on hover */
+}
+
 .button {
     display: grid;
     place-items: center;
