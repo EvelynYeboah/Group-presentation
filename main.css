@@ -247,7 +247,6 @@ section {
     padding: 12px 20px; /* Adjust the padding to make the button slightly longer */
     font-size: 16px; /* Adjust the font size if needed */
     border: none;
-    border-radius: 5px; /* Add border-radius for rounded corners */
     cursor: pointer;
 }
 
@@ -261,7 +260,6 @@ section {
     padding: 12px 20px; /* Adjust the padding to make the button slightly longer */
     font-size: 16px; /* Adjust the font size if needed */
     border: none;
-    border-radius: 5px; /* Add border-radius for rounded corners */
     cursor: pointer;
 }
 
@@ -276,7 +274,6 @@ section {
     padding: 12px 20px; /* Adjust the padding to make the button slightly longer */
     font-size: 16px; /* Adjust the font size if needed */
     border: none;
-    border-radius: 5px; /* Add border-radius for rounded corners */
     cursor: pointer;
 }
 .learn-more-button:hover {
@@ -311,7 +308,6 @@ section {
     width: 15px; /* Set the width of the square */
     margin: 0 5px; /* Adjust the margin between squares */
     background-color: #ddd; /* Set the background color of the square */
-    border-radius: 4px; /* Add border-radius for rounded corners */
     display: inline-block;
     transition: background-color 0.3s ease; /* Add transition for a smooth effect */
     cursor: pointer;
@@ -567,7 +563,6 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
 .signup-button{
     background-color: white;
     color: black;
@@ -596,6 +591,8 @@ footer{
     font-size: 10px;
 }
 
+
+
 .footer-section h4 {
     margin-bottom: 8px;
     font-size: 12px; /* Adjust the font size for headings */
@@ -620,4 +617,7 @@ footer{
 .socialmediaIcons a{
     font-size: 2em;
     color: black;
+
 }
+
+
