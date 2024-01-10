@@ -369,6 +369,7 @@ div.event img {
 
 div.event:hover{ 
     transform: scale(1.05);
+    background-color:#F3F5FF;
 }
 
 .event img {

@@ -87,3 +87,69 @@ hr{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  
+/* Explore section*/
+
+/* explore image */
+div.explore img {
+  width: 5%; /* Make the image fill the container width */
+  height: 5%; /* Maintain aspect ratio */
+  gap: 1px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: semibold;
+  align-items:flex-start;
+  margin-left: 1em;
+}
+
+.explore-container {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+/* Individual explore */
+div.explore{
+  border: 1px solid #ccc;
+  max-width: 500px;
+  width: calc(25% - 10px);
+  transition: transform 0.2s ease;
+}
+/* explore image */
+div.explore img {
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Maintain aspect ratio */
+  gap: 1px;
+}
+
+.desc{
+      font-weight: bold;
+}
+.date{
+  text-align: center;
+}
+
+
+div.explore:hover{ 
+  transform: scale(1.05);
+ 
+}
+
+.explore img {
+  width: 100%;
+  height: auto; 
+}
+
+.desc{
+  padding:15px;
+  text-align: center;
+}
+
+
+*{
+  box-sizing: border-box;
+}
