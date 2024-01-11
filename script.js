@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Login Modal Function
+// Login Modal
 function openLoginModal() {
     document.getElementById("loginModal").style.display = "block";
     document.body.style.background = "rgba(0, 0, 0, 0.5)";
@@ -28,38 +28,36 @@ function closeLoginModal() {
     document.body.style.background = "none";
 }
 
-// Slideshow section 
+// Slideshow section
 var slideIndex = 1;
 showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+    updateDots();
+}
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
     updateDots(); // Add this line to update dot styles
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-
     if (n > slides.length) {
         slideIndex = 1;
     }
-
     if (n < 1) {
         slideIndex = slides.length;
     }
-
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
     slides[slideIndex - 1].style.display = "block";
 }
-
 function updateDots() {
     var dots = document.getElementsByClassName("dot");
-
     for (var i = 0; i < dots.length; i++) {
         dots[i].classList.remove("active-dot");
     }
@@ -68,3 +66,7 @@ function updateDots() {
 }
 
 
+// Function the prev & next arrows
+document.querySelector(".next").addEventListener("click", function() {
+    plusSlides(1);
+});
